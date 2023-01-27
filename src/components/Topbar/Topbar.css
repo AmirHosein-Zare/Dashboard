@@ -3,7 +3,14 @@
 *{
     font-family: 'Nunito';
 }
-
+.Topbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
 .TopbarWrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,13 +21,26 @@
 .TopbarLogo{
     font-size: 20pt;
     justify-self: start;
+    cursor: pointer;
+    font-family: 'Nunito' !important;
+    font-weight: 600;
+    color: darkblue;
 }
 .TopbarRight{
     justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 10px;
+    align-items: center;
 }
 .UserImg{
-    width: 30px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 .TopbarIconContainer{
     display: inline-block;
+    cursor: pointer;
 }

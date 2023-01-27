@@ -11,7 +11,7 @@ export default function Topbar() {
       <div className="TopbarWrapper">
 
         <div className="TopbarLeft">
-          <span className='TopbarLogo'>Dashboard Admin</span>
+          <span className='TopbarLogo'>Dashboard Admin :)</span>
         </div>
 
         <div className="TopbarRight">
@@ -34,7 +34,9 @@ export default function Topbar() {
             </Badge>
           </div>
 
-          <img src="logo512.png" alt="" className='UserImg'/>
+          <div className="TopbarIconContainer">
+            <img src="logo512.png" alt="" className='UserImg'/>
+          </div>
 
         </div>
       </div>
