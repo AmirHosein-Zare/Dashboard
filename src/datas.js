@@ -46,7 +46,7 @@ let xAxisData = [
     {
         "name": "Dec",
         "Sale": 97_000
-    },
+    }
 ]
 
-export default xAxisData
+export {xAxisData}

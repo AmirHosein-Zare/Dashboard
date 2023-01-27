@@ -1,6 +1,5 @@
 import React from 'react'
 import './Analytics.css'
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 export default function Analytics(props) {
   return (
