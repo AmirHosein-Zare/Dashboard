@@ -4,7 +4,7 @@ import './WidgetLg.css'
 export default function WidgetLg() {
   
     const Button = ({type}) => {
-        return <button className={'WidgetLgBtn' + type}>{type}</button>
+        return <button className={'WidgetLgBtn ' + type}>{type}</button>
     }
   
     return (
@@ -26,6 +26,39 @@ export default function WidgetLg() {
                 <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
                 <td className='WidgetLgStatus WidgetLgTd'>
                     <Button type="Approved" />
+                </td>
+            </tr>
+            <tr>
+                <td className='WidgetLgTd WidgetLgUser'>
+                    <img src="logo512.png" className='WidgetLgImg'/>
+                    <span>Qadir Yolme</span>
+                </td>
+                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
+                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
+                <td className='WidgetLgStatus WidgetLgTd'>
+                    <Button type="Pending" />
+                </td>
+            </tr>
+            <tr>
+                <td className='WidgetLgTd WidgetLgUser'>
+                    <img src="logo512.png" className='WidgetLgImg'/>
+                    <span>Qadir Yolme</span>
+                </td>
+                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
+                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
+                <td className='WidgetLgStatus WidgetLgTd'>
+                    <Button type="Decilned" />
+                </td>
+            </tr>
+            <tr>
+                <td className='WidgetLgTd WidgetLgUser'>
+                    <img src="logo512.png" className='WidgetLgImg'/>
+                    <span>Qadir Yolme</span>
+                </td>
+                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
+                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
+                <td className='WidgetLgStatus WidgetLgTd'>
+                    <Button type="Pending" />
                 </td>
             </tr>
         </table>

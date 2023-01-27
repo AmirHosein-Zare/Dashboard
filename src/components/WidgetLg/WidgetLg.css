@@ -14,7 +14,8 @@
 }
 
 .WidgetLgTd{
-    padding: 5px 25px;
+    padding: 5px 30px;
+    margin-top: 10px;
 }
 
 .WidgetLgImg{
@@ -29,4 +30,32 @@
 
 .WidgetLgTh{
     text-align: center;
+}
+
+.WidgetLgDate , .WidgetLgPrice{
+    font-weight: 300;
+}
+
+.WidgetLgBtn{
+    background-color: rgb(230, 230, 230);
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.Approved{
+    color: #3bb077;
+    background-color: #e5faf2;
+}
+
+.Decilned{
+    color: #d95087;
+    background-color: #fff0f1;
+}
+
+.Pending{
+    color: #2a7ade;
+    background-color: #ebf1fe;
 }
