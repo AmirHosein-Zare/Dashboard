@@ -1,4 +1,36 @@
 .WidgetSm{
+    flex: 1;
     padding: 20px;
-    
+    margin: 20px;
+}
+
+.WidgetSmTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.WidgetSmList{
+    list-style-type: none;
+    margin: 5px;
+}
+
+.WidgetSmItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.WidgetSmImg{
+    width: 60px;
+}
+
+.WidgetSmUserName{
+    display: block;
+}
+
+.WidgetSmBtn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
 }

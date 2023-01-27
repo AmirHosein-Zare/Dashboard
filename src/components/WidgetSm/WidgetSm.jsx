@@ -6,9 +6,9 @@ export default function WidgetSm() {
   return (
     <div className='WidgetSm'>
         <span className='WidgetSmTitle'>New User Joined</span>
-        <div className="WidgetSmList">
+        <ul className="WidgetSmList">
             <li className="WidgetSmItem">
-                <img src="logo512.png" />
+                <img src="logo512.png" className='WidgetSmImg'/>
                 <div className="WidgetSmUser">
                     <span className='WidgetSmUserName'>Qadir Yolme</span>
                     <span className='WidgetSmUserTitle'>Hacker</span>
@@ -17,7 +17,7 @@ export default function WidgetSm() {
                     <VisibilityIcon className='WidgetSmIcon' />
                 </button>
             </li>
-        </div>
+        </ul>
     </div>
   )
 }
