@@ -1,4 +1,24 @@
 .AnalyticsTitle{
-    font-size: 18pt;
+    font-size: 16pt;
+    font-weight: 400;
+}
+.AnalyticsPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AnalyticsMoney{
+    font-size: 22pt;
     font-weight: 600;
+}
+
+.Analys{
+    display: flex;
+    align-items: center;
+}
+
+.Analytics-footer{
+    font-size: 12pt;
+    color: rgb(148, 148, 148);
 }

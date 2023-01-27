@@ -9,7 +9,6 @@ export default function Analytics(props) {
         <div className="AnalyticsPriceContainer">
             <div className='AnalyticsPrice'>
                 <div className="AnalyticsMoney">
-                    <AttachMoneyIcon />
                     ${props.price}
                 </div>
                 <div className="Analys">
@@ -17,7 +16,7 @@ export default function Analytics(props) {
                     {props.icon}
                 </div>
             </div>
-            <span>Compared To Last Month</span>
+            <span className='Analytics-footer'>Compared To Last Month</span>
         </div>
     </div>
   )
