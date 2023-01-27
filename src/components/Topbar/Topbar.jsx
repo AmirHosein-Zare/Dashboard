@@ -3,6 +3,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import LanguageIcon from '@mui/icons-material/Language';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Badge from '@mui/material/Badge';
+import './Topbar.css'
 
 export default function Topbar() {
   return (
