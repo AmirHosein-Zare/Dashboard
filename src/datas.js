@@ -49,4 +49,38 @@ let xAxisData = [
     }
 ]
 
+let users = [
+    {
+        id: 1,
+        name: 'Mohammad Zare',
+        job: 'Hacker',
+        img: 'logo512.png'
+    },
+    {
+        id: 2,
+        name: 'Ali shokri',
+        job: 'Frontend',
+        img: 'logo512.png'
+    },
+    {
+        id: 3,
+        name: 'Zahra Asghari',
+        job: 'Backend',
+        img: 'logo512.png'
+    },
+    {
+        id: 4,
+        name: 'Maryam Rezaei',
+        job: 'UI/UX',
+        img: 'logo512.png'
+    },
+    {
+        id: 5,
+        name: 'Ali Ahmadi',
+        job: 'Designer',
+        img: 'logo512.png'
+    },
+]
+
+export {users}
 export {xAxisData}
