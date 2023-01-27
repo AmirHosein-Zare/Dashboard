@@ -1,5 +1,6 @@
 import React from 'react'
 import './WidgetLg.css'
+import { transactions } from '../../datas'
 
 export default function WidgetLg() {
   
@@ -17,50 +18,21 @@ export default function WidgetLg() {
                 <th className="WidgetLgTh">Amount</th>
                 <th className="WidgetLgTh">Status</th>
             </tr>
-            <tr>
-                <td className='WidgetLgTd WidgetLgUser'>
-                    <img src="logo512.png" className='WidgetLgImg'/>
-                    <span>Qadir Yolme</span>
-                </td>
-                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
-                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
-                <td className='WidgetLgStatus WidgetLgTd'>
-                    <Button type="Approved" />
-                </td>
-            </tr>
-            <tr>
-                <td className='WidgetLgTd WidgetLgUser'>
-                    <img src="logo512.png" className='WidgetLgImg'/>
-                    <span>Qadir Yolme</span>
-                </td>
-                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
-                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
-                <td className='WidgetLgStatus WidgetLgTd'>
-                    <Button type="Pending" />
-                </td>
-            </tr>
-            <tr>
-                <td className='WidgetLgTd WidgetLgUser'>
-                    <img src="logo512.png" className='WidgetLgImg'/>
-                    <span>Qadir Yolme</span>
-                </td>
-                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
-                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
-                <td className='WidgetLgStatus WidgetLgTd'>
-                    <Button type="Decilned" />
-                </td>
-            </tr>
-            <tr>
-                <td className='WidgetLgTd WidgetLgUser'>
-                    <img src="logo512.png" className='WidgetLgImg'/>
-                    <span>Qadir Yolme</span>
-                </td>
-                <td className='WidgetLgDate WidgetLgTd'>2 May 2023</td>
-                <td className='WidgetLgPrice WidgetLgTd'>$199.95</td>
-                <td className='WidgetLgStatus WidgetLgTd'>
-                    <Button type="Pending" />
-                </td>
-            </tr>
+            {
+                transactions.map(trans => (
+                    <tr key={trans.id}>
+                        <td className='WidgetLgTd WidgetLgUser'>
+                            <img src="logo512.png" className='WidgetLgImg'/>
+                            <span>{trans.customer}</span>
+                        </td>
+                        <td className='WidgetLgDate WidgetLgTd'>{trans.date}</td>
+                        <td className='WidgetLgPrice WidgetLgTd'>${trans.price}</td>
+                        <td className='WidgetLgStatus WidgetLgTd'>
+                            <Button type={trans.status} />
+                        </td>
+                    </tr>
+                ))
+            }
         </table>
     </div>
   )

@@ -86,7 +86,7 @@ let transactions = [
     {
         id:1,
         customer:'Zahra Asghari',
-        data:'2 May 2022',
+        date:'2 May 2022',
         price:199.95,
         status:'Pending',
         img:'logo512.png'
@@ -94,7 +94,7 @@ let transactions = [
     {
         id:2,
         customer:'Qadir Yolme',
-        data:'12 Jul 2023',
+        date:'12 Jul 2023',
         price:29.99,
         status:'Approve',
         img:'logo512.png'
@@ -102,7 +102,7 @@ let transactions = [
     {
         id:3,
         customer:'Ali Ahmadi',
-        data:'24 Apr 2022',
+        date:'24 Apr 2022',
         price:199.95,
         status:'Decilned',
         img:'logo512.png'
@@ -110,7 +110,7 @@ let transactions = [
     {
         id:4,
         customer:'Ali shokri',
-        data:'6 Nov 2022',
+        date:'6 Nov 2022',
         price:9.95,
         status:'Pending',
         img:'logo512.png'
