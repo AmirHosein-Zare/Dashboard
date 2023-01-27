@@ -1,0 +1,32 @@
+.WidgetLg{
+    padding: 20px;
+    margin: 20px;
+}
+
+.WidgetLgTitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.WidgetLgTh{
+    padding: 10px 25px;
+    margin: 5px;
+}
+
+.WidgetLgTd{
+    padding: 5px 25px;
+}
+
+.WidgetLgImg{
+    width: 40px;
+    margin: 3px;
+}
+
+.WidgetLgUser{
+    display: flex;
+    align-items: center;
+}
+
+.WidgetLgTh{
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 .WidgetSmList{
     list-style-type: none;
-    margin: 5px;
+    margin-top: 20px;
 }
 
 .WidgetSmItem{
@@ -10,11 +10,12 @@
 }
 
 .WidgetSmImg{
-    width: 50px;
+    width: 40px;
 }
 
 .WidgetSmUserName{
     display: block;
+    text-align: center;
 }
 
 .WidgetSmBtn{
@@ -31,6 +32,8 @@
 .WidgetSmUserTitle{
     font-size: 10pt;
     color: rgb(157, 157, 157);
+    text-align: center;
+    display: block;
 }
 
 .WidgetSmIcon{
