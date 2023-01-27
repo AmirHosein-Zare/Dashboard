@@ -1,6 +1,7 @@
 import Home from "./pages/Home/Home"
 import UserList from "./pages/Users/UserList"
 import NewUser from "./pages/NewUser/NewUser"
+import Products from "./pages/Products/Products"
 
 let routes = [
     {path:'/', element: <Home />},
