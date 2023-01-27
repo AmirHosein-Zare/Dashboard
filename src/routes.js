@@ -1,4 +1,4 @@
-import Home from "./pages/home/Home"
+import Home from "./pages/Home/Home"
 import UserList from "./pages/Users/UserList"
 
 let routes = [
