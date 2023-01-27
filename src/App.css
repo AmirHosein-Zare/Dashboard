@@ -2,9 +2,9 @@
     margin: 0px;
 }
 .container{
-    margin-top: 50px;
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 70%;
     grid-template-rows: repeat(1, 1fr);
 }
 .link{

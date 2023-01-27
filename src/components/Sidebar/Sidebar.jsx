@@ -9,9 +9,9 @@ export default function Sidebar() {
     <div className='sidebar'>
         <div className="sidebarwrapper">
             <div className="sidebarMenu">
-                <h3 className="sidebarTitle">Dashboard</h3>
+                <h5 className="sidebarTitle">Dashboard</h5>
                 <ul className="sidebarList">
-                    <li className="sidebarItem">
+                    <li className="sidebarItem active">
                         <LineStyleIcon className='sidebarIcon'/>
                         Home
                     </li>
