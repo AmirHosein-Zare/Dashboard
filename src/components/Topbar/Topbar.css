@@ -3,3 +3,24 @@
 *{
     font-family: 'Nunito';
 }
+
+.TopbarWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+}
+
+.TopbarLogo{
+    font-size: 20pt;
+    justify-self: start;
+}
+.TopbarRight{
+    justify-self: end;
+}
+.UserImg{
+    width: 30px;
+}
+.TopbarIconContainer{
+    display: inline-block;
+}

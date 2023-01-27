@@ -11,7 +11,7 @@ export default function Topbar() {
       <div className="TopbarWrapper">
 
         <div className="TopbarLeft">
-          <span>Dashboard Admin</span>
+          <span className='TopbarLogo'>Dashboard Admin</span>
         </div>
 
         <div className="TopbarRight">
@@ -29,10 +29,13 @@ export default function Topbar() {
           </div>
           
           <div className="TopbarIconContainer">
-            <SettingsIcon color="action" />
+            <Badge color="primary">
+              <SettingsIcon color="action" />
+            </Badge>
           </div>
 
-          <img src="logo512.png" alt="" />
+          <img src="logo512.png" alt="" className='UserImg'/>
+
         </div>
       </div>
     </div>
