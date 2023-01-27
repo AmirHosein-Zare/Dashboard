@@ -48,3 +48,5 @@ let xAxisData = [
         "Sale": 97_000
     },
 ]
+
+export default xAxisData
