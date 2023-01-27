@@ -2,7 +2,7 @@
     height: calc(100vh - 50px);
     background-color: rgb(250, 250, 255);
     top: 50px;
-    position: fixed;
+    position: sticky;
     border-top-right-radius: 10px;
 }
 .sidebarwrapper{

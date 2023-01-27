@@ -12,6 +12,7 @@ import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -20,10 +21,12 @@ export default function Sidebar() {
             <div className="sidebarMenu">
                 <h5 className="sidebarTitle">Dashboard</h5>
                 <ul className="sidebarList">
-                    <li className="sidebarItem active">
-                        <LineStyleIcon className='sidebarIcon'/>
-                        Home
-                    </li>
+                    <Link to='/' className='link'>
+                        <li className="sidebarItem active">
+                            <LineStyleIcon className='sidebarIcon'/>
+                            Home
+                        </li>
+                    </Link>
                     <li className="sidebarItem">
                         <TimelineIcon className='sidebarIcon'/>
                         Analytics
@@ -37,18 +40,24 @@ export default function Sidebar() {
             <div className="sidebarMenu">
                 <h5 className="sidebarTitle">Quick Menu</h5>
                 <ul className="sidebarList">
-                    <li className="sidebarItem">
-                        <PermIdentityIcon className='sidebarIcon'/>
-                        Users
-                    </li>
-                    <li className="sidebarItem">
-                        <PermIdentityIcon className='sidebarIcon'/>
-                        New User
-                    </li>
-                    <li className="sidebarItem">
-                        <StorefrontIcon className='sidebarIcon'/>
-                        Products
-                    </li>
+                    <Link to='/users' className='link'>
+                        <li className="sidebarItem">
+                            <PermIdentityIcon className='sidebarIcon'/>
+                            Users
+                        </li>
+                    </Link>
+                    <Link to='/newuser' className='link'>
+                        <li className="sidebarItem">
+                            <PermIdentityIcon className='sidebarIcon'/>
+                            New User
+                        </li>
+                    </Link>
+                    <Link to='/products' className='link'>
+                        <li className="sidebarItem">
+                            <StorefrontIcon className='sidebarIcon'/>
+                            Products
+                        </li>
+                    </Link>
                     <li className="sidebarItem">
                         <AttachMoneyIcon className='sidebarIcon'/>
                         Transactions
