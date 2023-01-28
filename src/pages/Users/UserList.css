@@ -1,0 +1,15 @@
+.UserListImg{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.UserListUser{
+    display: flex;
+    align-items: center;
+    color: black;
+    
+}
+
+.UserListLink{
+    text-decoration: none;
+}
