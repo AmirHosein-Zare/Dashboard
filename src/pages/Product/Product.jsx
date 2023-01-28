@@ -4,10 +4,12 @@ import { ShowStuff } from '../../datas';
 import { Link, useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Chart from './../../components/Chart/Chart'
+import { SaleProducts } from '../../datas';
 
 export default function Product() {
     const [products, setProducts] = useState(ShowStuff)
     const productId = useParams('productID')
+    const [chartProduct, setChartProduct] =  useState(SaleProducts)
 
 
   return (
@@ -22,7 +24,7 @@ export default function Product() {
 
         <div className="productTop">
             <div className="productTopLeft">
-                <Chart title="Sale In Month" grid={true} data={} dataKey="Sale"/>
+                <Chart title="Sale In Month" grid={true} data={chartProduct} dataKey="Sale"/>
             </div>
             <div className="productTopRight">
 

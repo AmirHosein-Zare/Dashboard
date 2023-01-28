@@ -185,8 +185,28 @@ let ShowStuff = [
     },
 ]
 
-export {ShowStuff}
-export {userRows}
-export {transactions}
-export {users}
-export {xAxisData}
+const SaleProducts = [
+    {
+        "name": "Apr",
+        "Sale": 99_000
+    },
+    {
+        "name": "May",
+        "Sale": 54_000
+    },
+    {
+        "name": "Oct",
+        "Sale": 73_078
+    },
+    {
+        "name": "Nov",
+        "Sale": 12_900
+    },
+    {
+        "name": "Dec",
+        "Sale": 97_000
+    }
+]
+
+
+export {xAxisData, users, transactions, userRows, ShowStuff, SaleProducts}
