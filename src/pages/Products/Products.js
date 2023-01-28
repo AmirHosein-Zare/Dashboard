@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { userRows } from '../../datas';
+import { ShowStuff } from '../../datas';
 import './Products.css'
 import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
@@ -9,45 +9,35 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function Products() {
 
-    const [UserDatas, setUserDatas] = useState(userRows)
+    const [products, setProducts] = useState(ShowStuff)
 
     //Delete Event
     const DeleteHandler = (id) => {
-      setUserDatas(UserDatas.filter(user => user.id != id))
+      setProducts(products.filter(product => product.id != id))
     }
 
     //data Grid Column
     const columns = [
         { field: 'id', headerName: 'ID', width: 40 },
         {
-          field: 'user',
-          headerName: 'User',
+          field: 'title',
+          headerName: 'Title',
           width: 200,
           renderCell: (params) => {
             return(
               <Link to='/' className='UserListLink'>
                 <div className="UserListUser">
                   <img src={params.row.avatar} className="UserListImg"/>
-                  {params.row.username}
+                  {params.row.title}
                 </div>
               </Link>
             )
           }
         },
         {
-          field: 'status',
-          headerName: 'Status',
-          width: 120,
-        },
-        {
-          field: 'transaction',
-          headerName: 'Transaction',
+          field: 'price',
+          headerName: 'Price',
           width: 100,
-        },
-        {
-          field: 'email',
-          headerName: 'Email',
-          width: 150,
         },
         {
           field: 'action',
@@ -56,7 +46,7 @@ export default function Products() {
           renderCell: (params) => {
             return(
               <>
-                <Link to={`/users/${params.row.id}`}  className='UserListAction'>
+                <Link to={`/products/${params.row.id}`}  className='UserListAction'>
                   <button className='UserListEdit'>
                     <EditIcon className='UserListEditIcon' />
                   </button>
@@ -72,11 +62,11 @@ export default function Products() {
 
   return (
     <div className='UserList'>
-        <Box sx={{ height: 400, width: '100%' }}>
+        <Box sx={{ height: '100%', width: '100%' }}>
             <DataGrid
-              rows={UserDatas}
+              rows={products}
               columns={columns}
-              pageSize={9}
+              pageSize={11}
               rowsPerPageOptions={[5]}
               checkboxSelection
               disableSelectionOnClick

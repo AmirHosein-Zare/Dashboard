@@ -152,40 +152,40 @@ let userRows = [
     }
 ]
 
-let Products = [
+let ShowStuff = [
     {
         id:1,
         title:'Asus',
         avatar: 'logo512.png',
-        price:890
+        price:'$890'
     },
     {
         id:2,
         title:'Lenovo',
         avatar: 'logo512.png',
-        price:990
+        price:'$990'
     },
     {
         id:3,
         title:'Shiaomi',
         avatar: 'logo512.png',
-        price:1090
+        price:'$1090'
     },
     {
         id:4,
         title:'Omen',
         avatar: 'logo512.png',
-        price:620
+        price:'$620'
     },
     {
         id:5,
         title:'HP',
         avatar: 'logo512.png',
-        price:790
+        price:'$790'
     },
 ]
 
-export {Products}
+export {ShowStuff}
 export {userRows}
 export {transactions}
 export {users}
