@@ -2,6 +2,7 @@
 Admin dashboard project developed with React with graphical analysis capability to view products and users 
 and delete, add and edit simultaneously using Firebase, file, and Json file
 
+![alt text](https://github.com/AmirHosein-Zare/Dashboard/blob/master/dashboard.jpg?raw=true)
 
 ### `npm start`
 
