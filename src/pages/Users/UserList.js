@@ -11,11 +11,11 @@ export default function UserList() {
 
     //data Grid Column
     const columns = [
-        { field: 'id', headerName: 'ID', width: 90 },
+        { field: 'id', headerName: 'ID', width: 40 },
         {
           field: 'user',
           headerName: 'User',
-          width: 300,
+          width: 200,
           renderCell: (params) => {
             return(
               <Link to='/' className='UserListLink'>
@@ -30,12 +30,17 @@ export default function UserList() {
         {
           field: 'status',
           headerName: 'Status',
-          width: 150,
+          width: 120,
         },
         {
           field: 'transaction',
           headerName: 'Transaction',
-          width: 110,
+          width: 100,
+        },
+        {
+          field: 'email',
+          headerName: 'Email',
+          width: 150,
         },
       ];
 

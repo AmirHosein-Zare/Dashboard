@@ -123,35 +123,40 @@ let userRows = [
         username:'Qadir Yolme',
         avatar:'logo512.png',
         status:'active',
-        transaction:'$129.99'
+        transaction:'$129.99',
+        email:'google@gmail.com'
     },
     {
         id:2,
         username:'Hadi Rahimi',
         avatar:'logo512.png',
         status:'non-active',
-        transaction:'$240.52'
+        transaction:'$240.52',
+        email:'google@gmail.com'
     },
     {
         id:3,
         username:'Aran Andayesh',
         avatar:'logo512.png',
         status:'active',
-        transaction:'$321.67'
+        transaction:'$321.67',
+        email:'google@gmail.com'
     },
     {
         id:4,
         username:'Mohammad Ahmadi',
         avatar:'logo512.png',
         status:'active',
-        transaction:'$59.99'
+        transaction:'$59.99',
+        email:'google@gmail.com'
     },
     {
         id:5,
         username:'Fateme Faghih',
         avatar:'logo512.png',
         status:'non-active',
-        transaction:'$78.99'
+        transaction:'$78.99',
+        email:'google@gmail.com'
     },
 ]
 
