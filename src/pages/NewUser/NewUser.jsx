@@ -27,7 +27,8 @@ export default function NewUser() {
     setAge(event.target.value)
   }
 
-  const submitHandler = async () => {
+  const submitHandler = async (event) => {
+    event.preventDefault()
 
     let newUserAdd = {
       name,
@@ -36,10 +37,10 @@ export default function NewUser() {
       job
     }
 
-    await fetch(`https://dashboard-37f53-default-rtdb.firebaseio.com/users.json`,{
+    await fetch('https://dashboard-37f53-default-rtdb.firebaseio.com/users.json',{
       method: 'POST',
-      body: newUserAdd
-    })
+      body: JSON.stringify(newUserAdd)
+    }).then(res => console.log(res))
   }
 
   return (
