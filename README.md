@@ -1,13 +1,7 @@
+#Admin dashboard
 Admin dashboard project developed with React with graphical analysis capability to view products and users 
 and delete, add and edit simultaneously using Firebase, file, and Json file
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
