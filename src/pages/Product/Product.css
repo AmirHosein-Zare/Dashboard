@@ -16,6 +16,9 @@
 .productTopRight{
     flex: 2;
     margin: 90px 20px;
+    border: 2px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .productInfoTopImg{
@@ -57,4 +60,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ProductEditBtn{
+    justify-self: center;
+    width: 46%;
+    height: 80%;
 }

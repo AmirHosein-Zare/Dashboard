@@ -127,6 +127,10 @@ export default function Product() {
                             <AddPhotoAlternateIcon />
                         </Fab>
                     </div>
+
+                    <Button className='ProductEditBtn' variant="contained" color="success">
+                        Edit
+                    </Button>
                 </Box>
         </div>
     </div>
