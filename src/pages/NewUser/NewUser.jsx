@@ -23,8 +23,23 @@ export default function NewUser() {
     setJob(event.target.value)
   }
 
-  const ChangeAge(event) => {
+  const ChangeAge = (event) => {
     setAge(event.target.value)
+  }
+
+  const submitHandler = async () => {
+
+    let newUserAdd = {
+      name,
+      username,
+      age,
+      job
+    }
+
+    await fetch(`https://dashboard-37f53-default-rtdb.firebaseio.com/users.json`,{
+      method: 'POST',
+      body: newUserAdd
+    })
   }
 
   return (
@@ -39,7 +54,7 @@ export default function NewUser() {
             label="Name"
             defaultValue=""
             value={name}
-            onChange={() => ChangeName(event)}
+            onChange={(event) => ChangeName(event)}
           />
           <TextField
             required
@@ -47,7 +62,7 @@ export default function NewUser() {
             label="User Name"
             defaultValue=""
             value={username}
-            onChange={() => ChangeUsername(event)}
+            onChange={(event) => ChangeUsername(event)}
           />
           <TextField
             required
@@ -55,7 +70,7 @@ export default function NewUser() {
             label="Job"
             defaultValue=""
             value={job}
-            onChange={() => ChangeJob(event)}
+            onChange={(event) => ChangeJob(event)}
           />
           <TextField
             required
@@ -63,7 +78,7 @@ export default function NewUser() {
             label="Age"
             defaultValue=""
             value={age}
-            onChange={() => ChangeAge(event)}
+            onChange={(event) => ChangeAge(event)}
           />
           <div className='newUserPic'>
             <span className='newUserPicTitle'>Add Avatar</span>
@@ -71,7 +86,7 @@ export default function NewUser() {
             <AddPhotoAlternateIcon />
           </Fab>
           </div>
-          <Button className='newUserBtn' variant="contained" color="success">
+          <Button onClick={submitHandler} className='newUserBtn' variant="contained" color="success" type='submit'>
             Register
           </Button>
       </form>
