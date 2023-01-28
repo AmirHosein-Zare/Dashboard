@@ -117,6 +117,45 @@ let transactions = [
     },
 ]
 
+let userRows = [
+    {
+        id:1,
+        username:'Qadir Yolme',
+        avatar:'logo512.png',
+        status:'active',
+        transaction:'$129.99'
+    },
+    {
+        id:2,
+        username:'Hadi Rahimi',
+        avatar:'logo512.png',
+        status:'non-active',
+        transaction:'$240.52'
+    },
+    {
+        id:3,
+        username:'Aran Andayesh',
+        avatar:'logo512.png',
+        status:'active',
+        transaction:'$321.67'
+    },
+    {
+        id:4,
+        username:'Mohammad Ahmadi',
+        avatar:'logo512.png',
+        status:'active',
+        transaction:'$59.99'
+    },
+    {
+        id:5,
+        username:'Fateme Faghih',
+        avatar:'logo512.png',
+        status:'non-active',
+        transaction:'$78.99'
+    },
+]
+
+export {userRows}
 export {transactions}
 export {users}
 export {xAxisData}
