@@ -5,6 +5,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
 import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function UserList() {
 
@@ -50,9 +51,12 @@ export default function UserList() {
           renderCell: () => {
             return(
               <>
-                <Link to='/'>
+                <Link to='/' className='UserListAction'>
                   <button className='UserListEdit'>
                     <EditIcon className='UserListEditIcon' />
+                  </button>
+                  <button className='UserListEdit'>
+                    <DeleteIcon className='UserListEditIcon' />
                   </button>
                 </Link>
               </>
