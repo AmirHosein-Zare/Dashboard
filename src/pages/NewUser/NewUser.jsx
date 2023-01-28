@@ -40,7 +40,7 @@ export default function NewUser() {
     await fetch('https://dashboard-37f53-default-rtdb.firebaseio.com/users.json',{
       method: 'POST',
       body: JSON.stringify(newUserAdd)
-    }).then(res => console.log(res))
+    })
   }
 
   return (

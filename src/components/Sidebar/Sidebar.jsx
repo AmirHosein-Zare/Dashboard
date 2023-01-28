@@ -15,14 +15,46 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
-  return (
+    
+    let clickHandlerHome = () => {
+        let home = document.querySelector('.sidebarItemHome')
+        clearAll()
+        home.classList.add('active')
+    }
+    let clickHandlerUsers = () => {
+        let users = document.querySelector('.sidebarItemUsers')
+        clearAll()
+        users.classList.add('active')
+    }
+    let clickHandlerNewUser = () => {
+        let newUser = document.querySelector('.sidebarItemNewUser')
+        clearAll()
+        newUser.classList.add('active')
+    }
+    let clickHandlerProducts = () => {
+        let products = document.querySelector('.sidebarItemProducts')
+        clearAll()
+        products.classList.add('active')
+    }
+
+
+
+    let clearAll = () => {
+        let allBtn = document.querySelectorAll('.sidebarItemClick')
+
+        allBtn.forEach((btn) => {
+            btn.classList.remove('active')
+        })
+    }
+  
+    return (
     <div className='sidebar'>
         <div className="sidebarwrapper">
             <div className="sidebarMenu">
                 <h5 className="sidebarTitle">Dashboard</h5>
                 <ul className="sidebarList">
                     <Link to='/' className='link'>
-                        <li className="sidebarItem active">
+                        <li onClick={clickHandlerHome} className="sidebarItem active sidebarItemHome sidebarItemClick">
                             <LineStyleIcon className='sidebarIcon'/>
                             Home
                         </li>
@@ -41,19 +73,19 @@ export default function Sidebar() {
                 <h5 className="sidebarTitle">Quick Menu</h5>
                 <ul className="sidebarList">
                     <Link to='/users' className='link'>
-                        <li className="sidebarItem">
+                        <li onClick={clickHandlerUsers} className="sidebarItem sidebarItemClick sidebarItemUsers">
                             <PermIdentityIcon className='sidebarIcon'/>
                             Users
                         </li>
                     </Link>
                     <Link to='/newuser' className='link'>
-                        <li className="sidebarItem">
+                        <li onClick={clickHandlerNewUser} className="sidebarItem sidebarItemClick sidebarItemNewUser">
                             <PermIdentityIcon className='sidebarIcon'/>
                             New User
                         </li>
                     </Link>
                     <Link to='/products' className='link'>
-                        <li className="sidebarItem">
+                        <li onClick={clickHandlerProducts} className="sidebarItem sidebarItemClick sidebarItemProducts">
                             <StorefrontIcon className='sidebarIcon'/>
                             Products
                         </li>
