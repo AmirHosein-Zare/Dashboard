@@ -16,17 +16,8 @@ export default function Product() {
     const [products, setProducts] = useState(ShowStuff)
     const params = useParams()
     const [chartProduct, setChartProduct] =  useState(SaleProducts)
-    const [inStock, setInStock] = useState('Yes')
-    const [Action, setAction] = useState('Yes')
 
     const findProduct = products.filter(product => product.id == params.productID)
-    
-    const handleChange = (event)=>{
-        setInStock(event.target.value)
-    }
-    const handleChangeAction = (event)=>{
-        setAction(event.target.value)
-    }
 
     return (
     <div className='Product'>
@@ -45,7 +36,7 @@ export default function Product() {
             <div className="productTopRight">
                 <div className="productInfo">
                     <div className="productInfoTop">
-                        <img src={findProduct[0].avatar} />
+                        <img src={findProduct[0].avatar} alt="Profile"/>
                     </div>
                     <div className="productInfoBottom" >
                         <div className="productInfoDetail">
@@ -85,46 +76,49 @@ export default function Product() {
                 noValidate
                 autoComplete="off"
                 >
-                    <div className="productFormLeft">
-                        <TextField
+
+                        <TextField className='ProductFormInput'
                           required
                           id="outlined-required"
                           label="Title"
                           defaultValue={findProduct[0].title}
                         />
+                        
+                            <TextField className='ProductFormInput'
+                                  required
+                                  id="outlined-required"
+                                  label="Price"
+                                  defaultValue={findProduct[0].price}
+                                />
 
-                        <FormControl fullWidth>
+                        <FormControl className='ProductSelect'>
                             <InputLabel id="demo-simple-select-label">Action</InputLabel>
                             <Select
                                   labelId="demo-simple-select-label"
                                   id="demo-simple-select"
-                                  value={Action}
                                   label="Action"
                                   defaultValue={10}
-                                  onChange={handleChangeAction}
                                 >
                                 <MenuItem value={10}>Yes</MenuItem>
                                 <MenuItem value={20}>No</MenuItem>
                             </Select>
                         </FormControl>
-                    </div>
 
-                    <div className="productFormRight">
-                    <FormControl fullWidth>
+
+
+                    <FormControl className='ProductSelect'>
                       <InputLabel id="demo-simple-select-label">InStock</InputLabel>
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                        value={inStock}
                         label="InStock"
                         defaultValue={10}
-                        onChange={handleChange}
                       >
                         <MenuItem value={10}>Yes</MenuItem>
                         <MenuItem value={20}>No</MenuItem>
                       </Select>
                     </FormControl>
-                    </div>
+
                 </Box>
         </div>
     </div>

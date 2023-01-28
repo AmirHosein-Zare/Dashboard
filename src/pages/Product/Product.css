@@ -34,12 +34,16 @@
 }
 
 .productForm{
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
-/* .productFormLeft,
-.productFormRight{
-    flex: 1;
-} */
+.ProductSelect{
+    width: 240px;
+    justify-self: center;
+}
+
+.ProductFormInput{
+    justify-self: center;
+}
