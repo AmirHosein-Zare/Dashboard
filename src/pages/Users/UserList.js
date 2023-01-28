@@ -11,6 +11,10 @@ export default function UserList() {
 
     const [UserDatas, setUserDatas] = useState(userRows)
 
+    const DeleteHandler = (id) => {
+      setUserDatas(UserDatas.filter(user => user.id != id))
+    }
+
     //data Grid Column
     const columns = [
         { field: 'id', headerName: 'ID', width: 40 },
@@ -48,14 +52,14 @@ export default function UserList() {
           field: 'action',
           headerName: 'Action',
           width: 150,
-          renderCell: () => {
+          renderCell: (params) => {
             return(
               <>
-                <Link to='/' className='UserListAction'>
+                <Link  className='UserListAction'>
                   <button className='UserListEdit'>
                     <EditIcon className='UserListEditIcon' />
                   </button>
-                  <button className='UserListEdit'>
+                  <button className='UserListEdit' onClick={() => DeleteHandler(params.row.id)}>
                     <DeleteIcon className='UserListEditIcon' />
                   </button>
                 </Link>
