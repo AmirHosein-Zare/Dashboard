@@ -4,6 +4,7 @@ import './UserList.css'
 import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
+import EditIcon from '@mui/icons-material/Edit';
 
 export default function UserList() {
 
@@ -41,6 +42,22 @@ export default function UserList() {
           field: 'email',
           headerName: 'Email',
           width: 150,
+        },
+        {
+          field: 'action',
+          headerName: 'Action',
+          width: 150,
+          renderCell: () => {
+            return(
+              <>
+                <Link to='/'>
+                  <button className='UserListEdit'>
+                    <EditIcon className='UserListEditIcon' />
+                  </button>
+                </Link>
+              </>
+            )
+          }
         },
       ];
 
