@@ -156,31 +156,31 @@ let ShowStuff = [
     {
         id:1,
         title:'Asus',
-        avatar: 'logo512.png',
+        avatar: 'image/logo512.png',
         price:'$890'
     },
     {
         id:2,
         title:'Lenovo',
-        avatar: 'logo512.png',
+        avatar: 'image/logo512.png',
         price:'$990'
     },
     {
         id:3,
         title:'Shiaomi',
-        avatar: 'logo512.png',
+        avatar: 'image/logo512.png',
         price:'$1090'
     },
     {
         id:4,
         title:'Omen',
-        avatar: 'logo512.png',
+        avatar: 'image/logo512.png',
         price:'$620'
     },
     {
         id:5,
         title:'HP',
-        avatar: 'logo512.png',
+        avatar: 'image/logo512.png',
         price:'$790'
     },
 ]

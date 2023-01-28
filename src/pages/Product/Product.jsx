@@ -5,14 +5,29 @@ import { Link, useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Chart from './../../components/Chart/Chart'
 import { SaleProducts } from '../../datas';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 export default function Product() {
     const [products, setProducts] = useState(ShowStuff)
     const params = useParams()
     const [chartProduct, setChartProduct] =  useState(SaleProducts)
+    const [inStock, setInStock] = useState('Yes')
+    const [Action, setAction] = useState('Yes')
 
     const findProduct = products.filter(product => product.id == params.productID)
     
+    const handleChange = (event)=>{
+        setInStock(event.target.value)
+    }
+    const handleChangeAction = (event)=>{
+        setAction(event.target.value)
+    }
+
     return (
     <div className='Product'>
 
@@ -30,7 +45,7 @@ export default function Product() {
             <div className="productTopRight">
                 <div className="productInfo">
                     <div className="productInfoTop">
-                        <img src="logo512.png" alt="" />
+                        <img src={findProduct[0].avatar} />
                     </div>
                     <div className="productInfoBottom" >
                         <div className="productInfoDetail">
@@ -60,6 +75,57 @@ export default function Product() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="productBottom">
+            <Box className="productForm"
+                component="form"
+                sx={{
+                  '& .MuiTextField-root': { m: 1, width: '25ch' },
+                }}
+                noValidate
+                autoComplete="off"
+                >
+                    <div className="productFormLeft">
+                        <TextField
+                          required
+                          id="outlined-required"
+                          label="Title"
+                          defaultValue={findProduct[0].title}
+                        />
+
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Action</InputLabel>
+                            <Select
+                                  labelId="demo-simple-select-label"
+                                  id="demo-simple-select"
+                                  value={Action}
+                                  label="Action"
+                                  defaultValue={10}
+                                  onChange={handleChangeAction}
+                                >
+                                <MenuItem value={10}>Yes</MenuItem>
+                                <MenuItem value={20}>No</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </div>
+
+                    <div className="productFormRight">
+                    <FormControl fullWidth>
+                      <InputLabel id="demo-simple-select-label">InStock</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={inStock}
+                        label="InStock"
+                        defaultValue={10}
+                        onChange={handleChange}
+                      >
+                        <MenuItem value={10}>Yes</MenuItem>
+                        <MenuItem value={20}>No</MenuItem>
+                      </Select>
+                    </FormControl>
+                    </div>
+                </Box>
         </div>
     </div>
   )

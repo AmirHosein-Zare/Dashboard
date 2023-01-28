@@ -29,9 +29,17 @@
 }
 
 .productInfoTop{
-    /* background-image: url('../../../public/logo512.png');
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 200px;
     height: 200px;
 }
+
+.productForm{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* .productFormLeft,
+.productFormRight{
+    flex: 1;
+} */
