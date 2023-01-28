@@ -3,7 +3,7 @@ import './Product.css'
 import { ShowStuff } from '../../datas';
 import { Link, useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import Chart from './../../components/Chart/Chart'
+import Chart from '../../components/Chart/Chart'
 import { SaleProducts } from '../../datas';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -11,6 +11,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Fab from '@mui/material/Fab';
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 
 export default function Product() {
     const [products, setProducts] = useState(ShowStuff)
@@ -83,7 +85,7 @@ export default function Product() {
                           label="Title"
                           defaultValue={findProduct[0].title}
                         />
-                        
+
                             <TextField className='ProductFormInput'
                                   required
                                   id="outlined-required"
@@ -119,6 +121,12 @@ export default function Product() {
                       </Select>
                     </FormControl>
 
+                    <div className='productEditPhoto'>
+                        <img src="logo512.png" alt="Avatar"  className='ProductEditAvatar'/>
+                        <Fab color="primary" aria-label="add">
+                            <AddPhotoAlternateIcon />
+                        </Fab>
+                    </div>
                 </Box>
         </div>
     </div>

@@ -47,3 +47,14 @@
 .ProductFormInput{
     justify-self: center;
 }
+
+.ProductEditAvatar{
+    width: 30px;
+    margin-right: 40px;
+}
+
+.productEditPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
