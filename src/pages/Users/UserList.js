@@ -72,11 +72,11 @@ export default function UserList() {
 
   return (
     <div className='UserList'>
-        <Box sx={{ height: 400, width: '100%' }}>
+        <Box sx={{ height: '100%', width: '100%' }}>
             <DataGrid
               rows={UserDatas}
               columns={columns}
-              pageSize={9}
+              pageSize={11}
               rowsPerPageOptions={[5]}
               checkboxSelection
               disableSelectionOnClick

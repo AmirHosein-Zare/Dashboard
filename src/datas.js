@@ -149,17 +149,43 @@ let userRows = [
         status:'active',
         transaction:'$59.99',
         email:'google@gmail.com'
+    }
+]
+
+let Products = [
+    {
+        id:1,
+        title:'Asus',
+        avatar: 'logo512.png',
+        price:890
+    },
+    {
+        id:2,
+        title:'Lenovo',
+        avatar: 'logo512.png',
+        price:990
+    },
+    {
+        id:3,
+        title:'Shiaomi',
+        avatar: 'logo512.png',
+        price:1090
+    },
+    {
+        id:4,
+        title:'Omen',
+        avatar: 'logo512.png',
+        price:620
     },
     {
         id:5,
-        username:'Fateme Faghih',
-        avatar:'logo512.png',
-        status:'non-active',
-        transaction:'$78.99',
-        email:'google@gmail.com'
+        title:'HP',
+        avatar: 'logo512.png',
+        price:790
     },
 ]
 
+export {Products}
 export {userRows}
 export {transactions}
 export {users}
