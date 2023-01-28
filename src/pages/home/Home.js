@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className='home'>
       <Feature />
-      <Chart grid title='Month Sale' data={xAxisData} dataKey='Sale' />
+      <Chart title='Month Sale' data={xAxisData} dataKey='Sale' aspectUser={4}/>
       <div className='homeWidget'>
         <WidgetSm />
         <WidgetLg />

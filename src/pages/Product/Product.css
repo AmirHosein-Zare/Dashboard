@@ -3,3 +3,35 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.productTop{
+    display: flex;
+}
+
+.productTopLeft{
+    flex: 3;
+    margin: 10px;
+}
+
+.productTopRight{
+    flex: 2;
+    margin: 90px 20px;
+}
+
+.productInfoTopImg{
+    width: 40px;
+}
+
+.productInfoDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productInfoTop{
+    /* background-image: url('../../../public/logo512.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 200px;
+    height: 200px;
+}

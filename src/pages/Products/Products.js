@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 export default function Products() {
 
@@ -46,7 +47,7 @@ export default function Products() {
           renderCell: (params) => {
             return(
               <>
-                <Link to={`/products/${params.row.id}`}  className='UserListAction'>
+                <Link to={`/product/${params.row.id}`}  className='UserListAction'>
                   <button className='UserListEdit'>
                     <EditIcon className='UserListEditIcon' />
                   </button>
@@ -58,6 +59,7 @@ export default function Products() {
             )
           }
         },
+        
       ];
 
   return (

@@ -9,7 +9,7 @@ let routes = [
     {path:'/users', element: <Users />},
     {path:'/newuser', element: <NewUser />},
     {path:'/products', element: <Products />},
-    {path:'/products/:productID', element: <Product />},
+    {path:'/product/:productID', element: <Product />},
 ]
 
 export default routes
