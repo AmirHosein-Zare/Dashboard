@@ -1,4 +1,4 @@
-#Admin dashboard
+### `Admin dashboard`
 Admin dashboard project developed with React with graphical analysis capability to view products and users 
 and delete, add and edit simultaneously using Firebase, file, and Json file
 
