@@ -11,6 +11,7 @@ export default function UserList() {
 
     const [UserDatas, setUserDatas] = useState(userRows)
 
+    //Delete Event
     const DeleteHandler = (id) => {
       setUserDatas(UserDatas.filter(user => user.id != id))
     }
@@ -55,14 +56,14 @@ export default function UserList() {
           renderCell: (params) => {
             return(
               <>
-                <Link  className='UserListAction'>
+                <Link to={`/users/${params.row.id}`}  className='UserListAction'>
                   <button className='UserListEdit'>
                     <EditIcon className='UserListEditIcon' />
                   </button>
+                </Link>
                   <button className='UserListEdit' onClick={() => DeleteHandler(params.row.id)}>
                     <DeleteIcon className='UserListEditIcon' />
                   </button>
-                </Link>
               </>
             )
           }
@@ -75,7 +76,7 @@ export default function UserList() {
             <DataGrid
               rows={UserDatas}
               columns={columns}
-              pageSize={5}
+              pageSize={9}
               rowsPerPageOptions={[5]}
               checkboxSelection
               disableSelectionOnClick
